@@ -3,6 +3,13 @@ Dungeon.Home is a simple and relieable open-source landing page used by DungeonC
 
 Check it out at https://dungeon.chat/!
 
+## Setup
+
+At first it's necessary to have an local standard installation of vue-cli.
+1. `npm install`
+2. `npm start dev`
+3. Let's get the party started
+
 ## Releases
 
 ## Browsers supported
