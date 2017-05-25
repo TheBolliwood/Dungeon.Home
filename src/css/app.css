@@ -1,3 +1,38 @@
+strong{
+  font-weight:bold;
+}
+
+a:hover{
+  color:#682d8d;
+}
+
+/** GOOGLE **/
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
 .top-logo{
   position:absolute;
   top:-70px;
@@ -55,23 +90,118 @@ nav a.last:hover{
 
 .section_landing img{
   display:block;
-  padding-top:6em;
   margin:0 auto;
   width:22em;
 }
 
 section .content{
+  position: relative;
+  z-index: 100;
+  background: white;
   max-width:50em;
   margin:0 auto;
+  padding: 3em 1em 4em;
 }
 
 .section_landing .content h2{
   color:#682d8d;
+  margin-bottom:1em;
+}
+
+.section_landing .content h3{
+  color:#682d8d;
+  font-family: 'Lato';
+  letter-spacing:.5px;
+  font-size:1em;
+  font-style:italic;
 }
 
 
 
+/** FOOTER **/
+
 footer{
   width:100%;
   background:#333333;
+}
+
+footer .notify{
+  width:450px;
+  position:relative;
+  text-align:center;
+  margin:0 auto;
+  margin-top:60px;
+}
+
+.notify .mail, .notify .ctn-button{
+  display:inline-block;
+  height:50px;
+  background:#fff;
+  border-radius:5em;
+}
+
+.notify .mail .icon{
+  display:inline-block;
+  color:#682d8d;
+  padding:0 15px 0 15px;
+}
+
+.icon i{
+    line-height:50px;
+}
+
+.notify .mail input{
+  display:inline-block;
+  border-radius:inherit;
+  height:100%;
+  float:right;
+  padding:0 90px 0 0;
+  border:none;
+}
+
+.notify .ctn-button{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.notify .ctn-button input{
+  display:inline-block;
+  border-radius:inherit;
+  height:100%;
+  float:right;
+  border:none;
+  background:#682d8d;
+  box-shadow:0 0 87px #682d8d;
+  color:#fff;
+  text-transform:none;
+  font-weight:100;
+  font-family:Lato;
+  transition:.2s;
+}
+
+.ctn-button input:hover{
+  background:#8d51b5;
+  box-shadow:0 0 87px #8d51b5;
+}
+
+footer .hr{
+  padding-top:90px;
+  margin:0 auto;
+  max-width: 80em;
+  text-align:center;
+}
+
+footer .hr img{
+  -webkit-filter: brightness(10);
+  filter: brightness(10);
+  height:50px;
+  margin-top:-25px;
+}
+.hr:before{
+  content: '';
+  display:block;
+  width:100%;
+  height:1px;
+  background:#474747;
 }
