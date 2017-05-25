@@ -6,6 +6,15 @@ a:hover{
   color:#682d8d;
 }
 
+.no-interact{
+  user-drag: none;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+
 /** GOOGLE **/
 .material-icons {
   font-family: 'Material Icons';
@@ -36,7 +45,7 @@ a:hover{
 .top-logo{
   position:absolute;
   top:-70px;
-  left:-20px;
+  left:-15px;
 }
 
 .top-logo img{
@@ -160,6 +169,7 @@ footer .notify{
 }
 
 .notify .ctn-button{
+  background:none;
   position:absolute;
   top:0;
   right:0;
@@ -186,15 +196,13 @@ footer .notify{
 }
 
 footer .hr{
-  padding-top:90px;
+  padding: 90px 0 45px 0;
   margin:0 auto;
   max-width: 80em;
   text-align:center;
 }
 
 footer .hr img{
-  -webkit-filter: brightness(10);
-  filter: brightness(10);
   height:50px;
   margin-top:-25px;
 }
