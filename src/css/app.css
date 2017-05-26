@@ -15,32 +15,6 @@ user-select: none;
 -ms-user-select: none;
 }
 
-/** GOOGLE **/
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
 .row{
   margin:0 auto;
   max-width: 80em;
@@ -228,4 +202,39 @@ footer .hr img{
   font-family:'Lato';
   text-transform:uppercase;
   font-weight:900;
+  padding-bottom:10px;
+}
+
+.footer_content{
+  color:#65666d;
+}
+
+.footer_content a{
+  text-decoration:none;
+  color:inherit;
+  font-weight:600;
+}
+
+.footer_content a.license:hover{
+  border-bottom:1px solid #fff;
+  color:#fff;
+  transition:.2s;
+}
+
+.footer_midplaceholder{
+  color:#333333;
+}
+
+.footer_social a{
+  display:block;
+  font-weight:100;
+}
+
+.footer_social a:hover{
+  color:#fff;
+  transition:.2s;
+}
+
+.footer_social i{
+  padding-right:10px;
 }
