@@ -20,6 +20,10 @@ user-select: none;
   max-width: 80em;
 }
 
+section h1{
+  font-size:3em;
+  color:#333333;
+}
 
 
 /** ########## Start:: Actual Design ########## **/
@@ -99,7 +103,7 @@ section .content{
   margin-bottom:1em;
 }
 
-.section_landing .content h3{
+.content h3{
   color:#682d8d;
   font-family: 'Lato';
   letter-spacing:.5px;
