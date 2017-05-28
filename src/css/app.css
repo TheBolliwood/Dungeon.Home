@@ -97,7 +97,7 @@ section .content{
   margin:0 auto;
   padding: 3em 1em 4em;
   text-align:center;
-  height:600px;
+  height:700px;
 }
 
 
@@ -119,6 +119,29 @@ section .content .content_inner{
     z-index:100;
     background:white;
     padding:5em;
+}
+
+.content_inner::before{
+  content: "";
+    position: absolute;
+    z-index: 101;
+    top: 2em;
+    width: 65.0625em;
+    height: 10.25em;
+    background-size: contain;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.section_about .content_inner::before{
+  background: url(../img/branding/bubble/bubble_lock.svg) no-repeat center;
+  left:90%;
+}
+
+.section_volunteer .content_inner::before{
+  background: url(../img/branding/bubble/bubble_network.svg) no-repeat center;
+  right:90%;
 }
 
 .section_landing .content h2{
