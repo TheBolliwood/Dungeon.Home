@@ -25,6 +25,11 @@ section h1{
   color:#333333;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 
 /** ########## Start:: Actual Design ########## **/
 /** #################### :: ################### **/
