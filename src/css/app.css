@@ -105,6 +105,15 @@ section .content{
   height:700px;
 }
 
+section .content_last{
+  position: relative;
+  z-index: 100;
+  max-width:50em;
+  margin:0 auto;
+  padding: 3em 1em 4em;
+  text-align:center;
+}
+
 
 section .content::before{
     content: "";
