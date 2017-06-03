@@ -308,3 +308,38 @@ footer .hr img{
 .footer_social i{
   padding-right:10px;
 }
+
+.repo_item{
+  padding: 20px;
+background-color: #ffffff;
+border-radius: 6px;
+box-shadow: 0 12px 29px rgba(141, 81, 181, 0.2);
+margin-bottom:10px;
+}
+
+.repo_item h3{
+  color:#682d8d;
+  margin:0;
+}
+
+.repo_item a{
+display: block;
+border-radius: 5em;
+background: #682d8d;
+line-height:35px;
+text-decoration:none;
+color: #fff;
+width:65%;
+margin: 0 auto;
+margin-top:5px;
+transition: .2s;
+}
+
+.repo_item a:hover{
+  background:#8d51b5;
+}
+
+.repo_item a i{
+  font-size:.6em;
+  padding:2px;
+}
