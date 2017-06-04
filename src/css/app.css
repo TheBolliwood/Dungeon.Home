@@ -312,3 +312,47 @@ footer .hr:before {
 .footer_social i {
     padding-right: 10px;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 550px) {
+  nav, .top-logo{
+    display:none;
+  }
+  section .content .content_inner{
+    padding:1em;
+  }
+  .section_landing img{
+    width:100%;
+  }
+  .wrapper{
+    margin:0;
+  }
+  .footer{
+    text-align:center;
+  }
+  .footer_notify .ctn-mail input{
+    padding:0;
+    float:left;
+    width:calc(100% - 50px);
+  }
+  footer .footer_notify{
+    width:80%;
+  }
+  .footer_notify .ctn-mail{
+    position: absolute;
+    width:100%;
+    left: 0;
+  }
+  .footer_notify .ctn-mail .icon{
+    float:left;
+  }
+  footer .hr{
+    width:90%;
+  }
+  .footer_notify_inner{
+    margin:0 auto;
+    width:80%;
+    height:50px;
+  }
+}

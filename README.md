@@ -1,14 +1,12 @@
-# Dungeon.Home
+Dungeon.Chat
+============
+
+<img src="https://raw.githubusercontent.com/DungeonChat/Dungeon.Home/master/src/img/branding/logo%2Bwordmark/dark/logo%2Bwordmark_dark512.png" width="400">
+
+## What the heck is this?
 Dungeon.Home is a simple and relieable open-source landing page used by DungeonChat.
 
 Check it out at https://dungeon.chat/!
-
-## Setup
-
-At first it's necessary to have an local standard installation of vue-cli.
-1. `npm install`
-2. `npm start dev`
-3. Let's get the party started
 
 ## Releases
 
@@ -22,6 +20,8 @@ At first it's necessary to have an local standard installation of vue-cli.
 
 ## Used Technologies & 3rd Party Libraries
 
+- [normalize.css](https://github.com/necolas/normalize.css)
 - [Skeleton](https://github.com/dhg/Skeleton)
-- [Snap.svg](https://github.com/adobe-webplatform/Snap.svg)
-- [Zepto](https://github.com/madrobby/zepto)
+- [Ionicons](https://github.com/ionic-team/ionicons)
+- [jQuery](https://github.com/jquery/jquery)
+- [smoothScroll](https://github.com/alicelieutier/smoothScroll)
