@@ -4,6 +4,9 @@ app = {
 
   init: function () {
     var str_username = "DungeonChat";
+
+    smoothScroll.init()
+    
     app.getRepos(str_username);
   },
   getObjSize: function(obj){
@@ -34,7 +37,6 @@ app = {
               name: data[index]['name'],
               forks: data[index]['forks'],
               stars: data[index]['stargazers_count'],
-              watchers: data[index]['watchers'],
               uri: data[index]['html_url']
             }
           }
@@ -46,27 +48,26 @@ app = {
   },
   renderRepo: function(arr_miniRepoInfo){
     var rowCount = Math.round(app.getObjSize(arr_miniRepoInfo) / 3);
-    console.log(rowCount);
 
     var renderedItemCount = 0;
     var renderedRowCount = 0;
 
+    $(".repo_container").html("");
+
     for (index = 0; index < app.getObjSize(arr_miniRepoInfo); ++index) {
       renderedItemCount = index;
 
-      if(app.isDevideable(renderedItemCount)){
-        $(".repo_container").append('<div class="row" id="'+renderedRowCount+'">');
+      if (app.isDevideable(renderedItemCount)) {
+        $(".repo_container").append('<div class="row" id="' + renderedRowCount + '">');
         ++renderedRowCount
       }
 
       var repo_name = arr_miniRepoInfo[index]['name'].replace(app.repoPrefix, "");
       var repo_forks = arr_miniRepoInfo[index]['forks'];
       var repo_stars = arr_miniRepoInfo[index]['stars'];
-      var repo_watchers = arr_miniRepoInfo[index]['watchers'];
       var repo_uri = arr_miniRepoInfo[index]['uri']
 
-       $("#" + (renderedRowCount - 1)).append('<div class="four columns repo_item"><h3>' + repo_name + '</h3>Forks' + repo_forks + '<br/>Stars' + repo_stars + '<br/>Watchers' + repo_watchers + '<a href="' + repo_uri + '" target="_blank">Visit<i class="ion-android-open"></i></a></div>');
-
+      $("#" + (renderedRowCount - 1)).append('<div class="four columns repo_item"><h3>' + repo_name + '</h3><div class="stat_item"><i class="ion-star"></i>' + repo_stars + '</div><div class="stat_item"><i class="ion-fork-repo"></i>' + repo_forks + '</div><a class="no-interact" href="' + repo_uri + '" target="_blank">GitHub</a></div>');
     }
 
   }
