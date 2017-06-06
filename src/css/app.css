@@ -101,7 +101,7 @@ section .content {
     background: white;
     max-width: 50em;
     margin: 0 auto;
-    padding: 3em 1em 4em;
+    padding: 0 1em 7em;
     text-align: center;
     height: 700px;
 }
