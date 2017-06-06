@@ -198,6 +198,51 @@ section .content::before {
     font-style: italic;
 }
 
+/* Arrows */
+
+.animated-arrows .arrow-down:first-child svg {
+    animation-delay: 0s;
+}
+
+.animated-arrows .arrow-down:nth-child(2) svg {
+    animation-delay: 1s;
+}
+
+.animated-arrows .arrow-down:nth-child(3) svg {
+    animation-delay: 2s;
+}
+
+.animated-arrows .arrow-down:nth-child(4) svg {
+    animation-delay: 3s;
+}
+
+.animated-arrows .arrow-down:nth-child(5) svg {
+    animation-delay: 4s;
+}
+
+.arrow-down {
+    position: relative;
+}
+
+.arrow-down svg {
+    position: absolute;
+    transform: translateX(calc(-50% + .5px));
+    top: 0;
+    left: 0;
+    animation: arrow-down 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes arrow-down {
+    0% {
+        transform: translate(calc(-50% + .5px), 0);
+    }
+    100% {
+        transform: translate(calc(-50% + .5px), 5000%);
+    }
+}
+
 /* Footer */
 .footer {
     padding-bottom: 45px;
